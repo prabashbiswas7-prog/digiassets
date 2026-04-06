@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumenpix — Premium Stock Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">Lumenpix</div>
+    <div class="nav-links">
+      <a href="#">Photos</a>
+      <a href="#">Videos</a>
+      <a href="#">Collections</a>
+      <a href="#pricing" class="nav-cta">Get License</a>
+    </div>
+    <button class="nav-menu" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid">
+        <div class="hg-img hg-1" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80')"></div>
+        <div class="hg-img hg-2" style="background-image:url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80')"></div>
+        <div class="hg-img hg-3" style="background-image:url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80')"></div>
+        <div class="hg-img hg-4" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80')"></div>
+        <div class="hg-img hg-5" style="background-image:url('https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=80')"></div>
+        <div class="hg-img hg-6" style="background-image:url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Millions of free &amp; premium assets</p>
+      <h1 class="hero-title">The world's finest<br /><em>stock media</em></h1>
+      <div class="search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Search photos, videos, collections…" />
+        <button>Search</button>
+      </div>
+      <div class="hero-tags">
+        <span>Nature</span><span>Architecture</span><span>People</span><span>Business</span><span>Travel</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat"><span class="stat-num">4.2M+</span><span class="stat-label">Photos</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">1.1M+</span><span class="stat-label">Videos</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Contributors</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">Free</span><span class="stat-label">Always</span></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="section-header">
+      <h2>Trending <em>today</em></h2>
+      <a href="#" class="see-all">View all →</a>
+    </div>
+    <div class="masonry">
+      <div class="card" data-price="Free">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=500&q=80');height:320px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl" onclick="openPayment({title:'Golden Hour Serenity',price:'Free',type:'Photo'})">⬇ Free Download</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag free">Free</span> Photo · 6240×4160</div>
+        </div>
+      </div>
+      <div class="card" data-price="₹299">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=500&q=80');height:420px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl premium" onclick="openPayment({title:'Winter Peaks',price:'₹299',type:'Photo'})">⬇ ₹299</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag premium">Premium</span> Photo · 8000×5333</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&q=80');height:280px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl" onclick="openPayment({title:'Coastal Calm',price:'Free',type:'Photo'})">⬇ Free Download</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag free">Free</span> Photo · 5472×3648</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80');height:370px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl premium" onclick="openPayment({title:'Forest Light',price:'₹499',type:'Photo'})">⬇ ₹499</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag premium">Premium</span> Photo · 7360×4912</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1574936145840-28808d77a0b6?w=500&q=80');height:310px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl" onclick="openPayment({title:'Desert Dunes',price:'Free',type:'Photo'})">⬇ Free Download</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag free">Free</span> Photo · 4288×2848</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1458668383970-8ddd3927deed?w=500&q=80');height:390px"></div>
+        <div class="card-overlay">
+          <div class="card-actions">
+            <button class="btn-dl premium" onclick="openPayment({title:'Alpine Reflections',price:'₹699',type:'Photo'})">⬇ ₹699</button>
+            <button class="btn-fav">♡</button>
+          </div>
+          <div class="card-meta"><span class="tag premium">Premium</span> Photo · 6000×4000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-header centered">
+      <p class="eyebrow">Simple pricing</p>
+      <h2>One license.<br /><em>Unlimited use.</em></h2>
+      <p class="pricing-sub">No subscription traps. Pay once, use forever.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-label">Free</div>
+        <div class="plan-price">₹0</div>
+        <div class="plan-period">forever</div>
+        <ul class="plan-features">
+          <li>✓ 50 free downloads/month</li>
+          <li>✓ Personal &amp; commercial use</li>
+          <li>✓ Standard resolution</li>
+          <li>✓ Attribution required</li>
+          <li class="muted">✗ 4K &amp; RAW files</li>
+          <li class="muted">✗ Extended license</li>
+        </ul>
+        <button class="plan-btn" onclick="openPayment({title:'Free Plan',price:'₹0',type:'Plan'})">Get Started Free</button>
+      </div>
+      <div class="plan featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-label">Pro</div>
+        <div class="plan-price">₹799</div>
+        <div class="plan-period">per month</div>
+        <ul class="plan-features">
+          <li>✓ Unlimited downloads</li>
+          <li>✓ Personal &amp; commercial use</li>
+          <li>✓ 4K &amp; RAW files</li>
+          <li>✓ No attribution needed</li>
+          <li>✓ Extended license</li>
+          <li>✓ Priority support</li>
+        </ul>
+        <button class="plan-btn featured-btn" onclick="openPayment({title:'Pro Plan',price:'₹799/mo',type:'Plan'})">Get Pro Access</button>
+      </div>
+      <div class="plan">
+        <div class="plan-label">Team</div>
+        <div class="plan-price">₹1,999</div>
+        <div class="plan-period">per month · up to 5 seats</div>
+        <ul class="plan-features">
+          <li>✓ Everything in Pro</li>
+          <li>✓ 5 team members</li>
+          <li>✓ Shared collections</li>
+          <li>✓ Invoice billing</li>
+          <li>✓ Custom licensing</li>
+          <li>✓ Dedicated account manager</li>
+        </ul>
+        <button class="plan-btn" onclick="openPayment({title:'Team Plan',price:'₹1,999/mo',type:'Plan'})">Get Team Access</button>
+      </div>
+    </div>
+    <p class="pricing-note">All plans include GST. Cancel anytime. Pay via UPI, Card, or Net Banking.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Lumenpix</div>
+        <p>Beautiful stock media,<br />free and premium.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <a href="#">Photos</a>
+          <a href="#">Videos</a>
+          <a href="#">Collections</a>
+          <a href="#">Trending</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">License</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">DMCA</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lumenpix. All rights reserved.</span>
+      <span>Made with care · Mumbai, India</span>
+    </div>
+  </footer>
+
+  <!-- PAYMENT MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closePayment()"></div>
+  <div class="modal" id="paymentModal">
+    <button class="modal-close" onclick="closePayment()">✕</button>
+    <div class="modal-header">
+      <div class="modal-icon">🖼</div>
+      <div>
+        <div class="modal-title" id="modalTitle">Golden Hour Serenity</div>
+        <div class="modal-sub" id="modalSub">Photo License</div>
+      </div>
+    </div>
+    <div class="modal-price-row">
+      <span>Total</span>
+      <span class="modal-price" id="modalPrice">₹299</span>
+    </div>
+
+    <div class="pay-tabs">
+      <button class="pay-tab active" onclick="switchTab('upi',this)">UPI</button>
+      <button class="pay-tab" onclick="switchTab('card',this)">Card</button>
+      <button class="pay-tab" onclick="switchTab('netbanking',this)">Net Banking</button>
+    </div>
+
+    <div class="pay-panel" id="panel-upi">
+      <label>UPI ID</label>
+      <input type="text" placeholder="yourname@upi" class="pay-input" id="upiInput"/>
+      <div class="upi-apps">
+        <button class="upi-app" onclick="fillUPI('gpay')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/120px-Google_Pay_Logo.svg.png" alt="GPay"/>GPay</button>
+        <button class="upi-app" onclick="fillUPI('phonepe')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PhonePe_Logo.svg/120px-PhonePe_Logo.svg.png" alt="PhonePe"/>PhonePe</button>
+        <button class="upi-app" onclick="fillUPI('paytm')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Paytm_logo.png/120px-Paytm_logo.png" alt="Paytm"/>Paytm</button>
+      </div>
+    </div>
+
+    <div class="pay-panel hidden" id="panel-card">
+      <label>Card Number</label>
+      <input type="text" placeholder="1234 5678 9012 3456" class="pay-input" maxlength="19" oninput="formatCard(this)"/>
+      <div class="card-row">
+        <div>
+          <label>Expiry</label>
+          <input type="text" placeholder="MM/YY" class="pay-input" maxlength="5"/>
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="text" placeholder="•••" class="pay-input" maxlength="3" type="password"/>
+        </div>
+      </div>
+      <label>Name on card</label>
+      <input type="text" placeholder="Your full name" class="pay-input"/>
+    </div>
+
+    <div class="pay-panel hidden" id="panel-netbanking">
+      <label>Select Bank</label>
+      <select class="pay-input pay-select">
+        <option value="">Choose your bank…</option>
+        <option>State Bank of India</option>
+        <option>HDFC Bank</option>
+        <option>ICICI Bank</option>
+        <option>Axis Bank</option>
+        <option>Kotak Mahindra</option>
+        <option>Punjab National Bank</option>
+        <option>Bank of Baroda</option>
+        <option>Yes Bank</option>
+      </select>
+    </div>
+
+    <button class="pay-btn" id="payBtn" onclick="processPayment()">
+      <span id="payBtnText">Pay Now</span>
+    </button>
+    <p class="modal-secure">🔒 Secured by 256-bit SSL encryption</p>
+  </div>
+
+  <!-- SUCCESS TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <div>
+      <div class="toast-title">Payment successful!</div>
+      <div class="toast-sub">Your download link has been sent to your email.</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
